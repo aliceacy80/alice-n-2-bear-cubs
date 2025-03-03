@@ -1,0 +1,124 @@
+/* Foundry Color Palette */
+:root {
+    --foundry-dark-brown: #3E2723;
+    --foundry-warm-gray: #8D6E63;
+    --foundry-muted-gold: #BCAAA4;
+    --foundry-light-beige: #D7CCC8;
+    --foundry-off-white: #EFEBE9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--foundry-off-white);
+    margin: 0;
+    padding: 0;
+    color: var(--foundry-dark-brown);
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--foundry-dark-brown);
+    font-family: 'Pacifico', cursive; /* Apply cute font */
+    font-size: 3rem; /* Increase font size */
+    margin-bottom: 20px;
+    font-weight: normal; /* Remove bold */
+}
+
+.input-section, .search-section {
+    margin-bottom: 20px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid var(--foundry-light-beige);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: var(--foundry-off-white);
+    color: var(--foundry-dark-brown);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--foundry-warm-gray);
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: var(--foundry-warm-gray);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--foundry-dark-brown);
+}
+
+.lyrics-list {
+    margin-top: 20px;
+}
+
+#lyricsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lyricsList li {
+    background-color: var(--foundry-off-white);
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid var(--foundry-light-beige);
+    border-radius: 4px;
+    color: var(--foundry-dark-brown);
+}
+
+#lyricsList li strong {
+    color: var(--foundry-dark-brown);
+    font-size: 1.2rem;
+}
+
+#lyricsList li em {
+    color: var(--foundry-warm-gray);
+    font-size: 0.9rem;
+    display: block;
+    margin: 5px 0;
+}
+
+/* Preserve line breaks and spacing in lyrics */
+.lyrics-content {
+    white-space: pre-wrap;
+    font-family: inherit;
+    margin-top: 10px;
+}
+
+/* Disable text selection */
+body {
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+}
+
+/* Allow text selection in input fields and textarea */
+input, textarea {
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+}
